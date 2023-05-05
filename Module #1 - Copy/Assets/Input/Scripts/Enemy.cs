@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -17,7 +18,8 @@ public class Enemy : MonoBehaviour
 
     public GameObject enemy;
 
-    public float speed = 3f;
+   
+    private float speed = 3f;
     private bool isGrounded;
     public float gravity = -9.8f;
     public float jumpHeight = 2f;
@@ -50,11 +52,11 @@ public class Enemy : MonoBehaviour
             transform.LookAt(playerTransform.position);
             if (speed > 0)
             {
-                transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, speed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, speed * 2 * Time.deltaTime);
             }
             else
             {
-                transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, -speed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, -speed * 2 * Time.deltaTime);
 
             }
             
@@ -125,14 +127,27 @@ public class Enemy : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        Debug.Log("test");
         if (other.CompareTag("Player"))
         {
             Debug.Log("ENemy notices you");
+            animator.SetBool("Run", true);
             follow = true;
             
             //transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, speed * Time.deltaTime);
             
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            
+            animator.SetBool("Run", false);
+            follow = false;
+
+            //transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, speed * Time.deltaTime);
+
         }
     }
 }
