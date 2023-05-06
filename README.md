@@ -1,14 +1,10 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+I have been interested in game development my whole life and I wanted to learn more about the process of making video games. I decided to spend two weeks diving into a game engine named Unity and I was able to make a little demo of an FPS. The player can control a character and they can shoot and destroy enemies that spawn. The enemies have a very simple AI system where they continously patrol between the map and once they detect the player, they run towards them.
 
-{Provide a description the game that you wrote. Describe how to play your game.}
+I wrote this software so that I can take more steps into game development and I am looking forward to applying these skills to future projects.
 
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the game being played and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/lTzK9A469KQ)
 
 # Development Environment
 
@@ -16,15 +12,13 @@
 
 {Describe the programming language that you used and any libraries.}
 
+To develop this demo, I used Unity and Visual Studio. C# was the programming language that was used.
+
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [YouTube Tutorial #1](https://www.youtube.com/watch?v=rJqP5EesxLk&list=PLSM93sNJyGMTQxRUW1HhfANsdYogVRkPt&index=8&t=3s)
+* [YouTube Tutorial #2](https://www.youtube.com/watch?v=2_Hn5ZsUIXM&list=PLSM93sNJyGMTQxRUW1HhfANsdYogVRkPt&index=12)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+For the future, I need to be a little more reliant on tutorials. I would often spend more time that I should've trying to solve a problem when I should've just been patient with the process and watched more tutorials to help me when I was stuck.
