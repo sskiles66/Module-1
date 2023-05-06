@@ -8,10 +8,6 @@ I wrote this software so that I can take more steps into game development and I 
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
-
 To develop this demo, I used Unity and Visual Studio. C# was the programming language that was used.
 
 # Useful Websites
